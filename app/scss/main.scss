@@ -1,0 +1,527 @@
+@import "config";
+@import "table";
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: $text;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--table {
+    max-width: 782px;
+  }
+}
+
+b {
+  font-weight: bold;
+}
+
+.form__section {
+  padding: 42px 0;
+}
+
+.form__header {
+  width: 100%;
+  height: 30px;
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 15px;
+  margin-bottom: 30px;
+
+  &--main {
+    background: $green;
+    margin-bottom: 15px;
+
+    .form__header__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &--toggle {
+    justify-content: space-between;
+  }
+
+  &--table {
+    margin-bottom: 0;
+    .row {
+      width: 100%;
+    }
+  }
+}
+
+.form__header__title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.form__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  &--radio {
+    margin-left: 23px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    .form__label {
+      margin-right: 0;
+    }
+  }
+
+  &--special {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .form__input {
+      order: 1;
+    }
+
+    .form__label {
+      margin-top: 5px;
+      margin-right: 0;
+      order: 2;
+    }
+  }
+
+  &--textarea {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .form__label {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.form__label {
+  font-size: 15px;
+  line-height: 18px;
+  margin-right: 9px;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.form__label__sub {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form__input {
+  width: 100%;
+  height: 33px;
+  min-height: 33px;
+  max-height: 33px;
+  background: #ffffff;
+  border: 1px solid #4e8b7c;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 10px;
+  font: inherit;
+  transition: all 0.2s linear;
+
+  &:focus {
+    outline: none;
+    border-color: $text;
+  }
+
+  &::placeholder {
+    color: #969696;
+  }
+
+  &--textarea {
+    resize: none;
+    height: 119px;
+    max-height: 119px;
+  }
+}
+
+/* для элемента input c type="radio" */
+.form__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+/* для элемента label связанного с .custom-radio */
+.form__radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.form__radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+/* стили при наведении курсора на радио */
+.form__radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: $green;
+}
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.form__radio:focus:not(:checked) + label::before {
+  border-color: $green;
+}
+/* стили для радиокнопки, находящейся в состоянии checked */
+.form__radio:checked + label::before {
+  border-color: $green;
+  background-color: $green;
+  background-image: url("../images/dest/radio.svg");
+  background-position: center;
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.form__radio:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.form__radio__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form__radio__label {
+  margin-right: 20px;
+}
+
+.form__radio__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form__line {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__box {
+  margin-bottom: 30px;
+
+  &--text {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    .form__header {
+      box-sizing: border-box;
+      &--main {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.form__text__body {
+  border: 1px solid $text;
+  border-top: none;
+  width: 100%;
+  padding: 10px 180px 9px 15px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form__header__btn {
+  background: none;
+  padding: 0;
+  border: none;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--active {
+    transform: rotate(45deg);
+  }
+}
+
+.form__table__line {
+  padding: 0 15px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  & > .row {
+    width: 100%;
+    align-items: center;
+  }
+
+  &:hover {
+    background: rgba(70, 148, 128, 0.22);
+  }
+
+  &--special {
+    height: auto;
+    margin-top: 5px;
+    pointer-events: none;
+
+    .form__table__item {
+      font-weight: 600;
+    }
+  }
+}
+
+.form__table__top {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form__table__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  .form__item {
+    width: fit-content;
+  }
+
+  .form__label {
+    font-size: 0;
+    line-height: 1;
+    &::before {
+      margin-right: 0;
+    }
+  }
+}
+
+.form__text__title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #4e8b7c;
+  margin-bottom: 15px;
+}
+
+.form__signuter__item {
+  width: 100%;
+}
+
+.form__signuter__label {
+  margin-top: 5px;
+  width: 100%;
+  padding-top: 4px;
+  border-top: 1px solid $green;
+}
+
+.form__textcontent {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.form__sub__textarea {
+  width: 100%;
+  text-align: right;
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 2px;
+}
+
+.form__add {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: $green;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    margin-right: 11px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .form__header {
+    height: fit-content;
+    padding: 10px 15px;
+    &--main {
+      .form__header__title {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .form__header__title {
+    font-size: 14px;
+  }
+
+  .form__item {
+    padding: 0 15px !important;
+    margin-left: 0 !important;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    &--radio {
+      margin-left: 7px;
+      &:first-child {
+        margin-left: 0;
+        padding-left: 0 !important;
+      }
+    }
+
+    &--fix {
+      .form__label {
+        white-space: normal;
+      }
+
+      .form__input {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .form__label {
+    margin-right: 0;
+    margin-bottom: 7px;
+    font-size: 14px;
+    padding-left: 0 !important;
+
+    &--space {
+      white-space: normal;
+    }
+  }
+
+  .form__radio__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form__radio__label {
+    margin-right: 0;
+    margin-bottom: 7px;
+    font-size: 14px;
+  }
+
+  .form__line {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+
+    &--alone {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  .form__box__table__wrapper {
+    overflow-x: scroll;
+  }
+
+  .form__box {
+    &--table {
+      width: 1110px;
+    }
+
+    &--text {
+      margin-bottom: 30px;
+    }
+  }
+
+  .form__table__left {
+    font-size: 14px;
+  }
+
+  .form__table {
+    .form__item {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__text__body {
+    padding: 5px 15px;
+    text-align: justify;
+  }
+
+  .form__radio__list {
+    &--special {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .form__item {
+        &--radio {
+          width: 50%;
+          margin-left: 0;
+          justify-content: flex-start;
+          padding-left: 0 !important;
+        }
+      }
+    }
+  }
+
+  .form__textcontent {
+    &.no-md {
+      display: none;
+    }
+  }
+
+  .form__signuter__item {
+    margin-bottom: 20px;
+  }
+
+  .form__add {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $mobile) {
+}

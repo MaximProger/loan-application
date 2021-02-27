@@ -1,0 +1,2143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap Grid -->
+	<link rel="stylesheet" href="./css/include/bootstrap-grid.min.css">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./css/app.min.css">
+	<title>Title</title>
+</head>
+
+<body>
+
+	<main class="main">
+		<section class="form__section">
+			<div class="container">
+				<form action="/" class="form" id="form" name="form">
+					<div class="form__wrapper">
+
+						<div class="form__header form__header--main">
+							<h1 class="form__header__title">
+								<b>LOAN APPLICATION</b> - Brrower Details
+							</h1>
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									BRROWER / AUTHORIZED SIGNER INFORMATION
+								</h2>
+							</div>
+
+							<div class="form__line">
+
+								<div class="row">
+									<div class="form__item col-12 col-md-7">
+										<label for="individuals" class="form__label" style="margin-right: 82px;">
+											Individual’s Name:
+										</label>
+										<input type="text" class="form__input" id="individuals" name="individuals">
+									</div>
+
+									<div class="form__radio__wrapper col-12 col-md-5">
+										<div class="form__radio__label">
+											Marital Status:
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="married" name="status" checked>
+												<label for="married" class="form__label">
+													Married
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="single" name="status">
+												<label for="single" class="form__label">
+													Single
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="separated" name="status">
+												<label for="separated" class="form__label">
+													Separated
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item col-12">
+										<label for="primary" class="form__label">
+											Primary Residence Address:
+										</label>
+										<input type="text" class="form__input" id="primary" name="primary"
+											placeholder="City, State, Zip Code">
+									</div>
+								</div>
+							</div>
+
+
+							<div class="form__line">
+
+								<div class="row">
+									<div class="form__radio__wrapper col-12 col-md-6" style="justify-content: flex-start;">
+										<div class="form__radio__label">
+											Do you own or rent your primary residence:
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="own" name="residence" checked>
+												<label for="own" class="form__label">
+													Own
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="rent" name="residence">
+												<label for="rent" class="form__label">
+													Rent
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-md-6">
+										<label for="numberofyears" class="form__label">
+											Number of years at primary residence:
+										</label>
+										<input type="text" class="form__input" id="numberofyears" name="numberofyears"
+											placeholder="City, State, Zip Code">
+									</div>
+								</div>
+
+							</div>
+
+							<div class="form__line" style="padding-left: 84px;">
+								<div class="row">
+									<div class="form__item col-12">
+										<label for="mailing" class="form__label">
+											Mailing Address:
+										</label>
+										<input type="text" class="form__input" id="mailing" name="mailing">
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line" style="padding-left: 72px;">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="email" class="form__label">
+											Email:
+										</label>
+										<input type="email" class="form__input" id="email" name="email">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="mobilephone" class="form__label">
+											Mobile Phone:
+										</label>
+										<input type="tel" class="form__input" id="mobilephone" name="mobilephone">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="homephone" class="form__label">
+											Home Phone:
+										</label>
+										<input type="text" class="form__input" id="homephone" name="homephone">
+									</div>
+
+
+								</div>
+							</div>
+
+
+							<div class="form__line" style="padding-left: 18px;">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="dateofbirth" class="form__label">
+											Date of Birth:
+										</label>
+										<input type="date" class="form__input" id="dateofbirth" name="dateofbirth">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="password" class="form__label">
+											Social Security #:
+										</label>
+										<input type="password" class="form__input" id="password" name="password">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										Self-Employed:
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="yes" name="selfemployed" checked>
+											<label for="yes" class="form__label">
+												Yes
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="no" name="selfemployed">
+											<label for="no" class="form__label">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="employername" class="form__label">
+											Employer Name:
+										</label>
+										<input type="text" class="form__input" id="employername" name="employername">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="positiontitle" class="form__label">
+											Position & Title:
+										</label>
+										<input type="text" class="form__input" id="positiontitle" name="positiontitle">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="employeraddress" class="form__label">
+											Employer Address:
+										</label>
+										<input type="text" class="form__input" id="employeraddress" name="employeraddress">
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="form__box">
+							<div class="form__header form__header--toggle">
+								<h2 class="form__header__title">
+									ADD CO-BORROWER / AUTHORIZED SIGNER INFORMATION (if applicable)
+								</h2>
+								<button class="form__header__btn" type="button">
+									<img src="./images/dest/plus.svg" alt="toggle">
+								</button>
+							</div>
+
+							<div class="form__body" style="display: none;">
+								<div class="form__line">
+
+									<div class="row">
+										<div class="form__item col-12 col-md-7">
+											<label for="individuals2" class="form__label" style="margin-right: 82px;">
+												Individual’s Name:
+											</label>
+											<input type="text" class="form__input" id="individuals2" name="individuals2">
+										</div>
+
+										<div class="form__radio__wrapper col-12 col-md-5">
+											<div class="form__radio__label">
+												Marital Status:
+											</div>
+											<div class="form__radio__list">
+												<div class="form__item form__item--radio">
+													<input type="radio" class="form__radio" id="married2" name="status2" checked>
+													<label for="married2" class="form__label">
+														Married
+													</label>
+												</div>
+
+												<div class="form__item form__item--radio">
+													<input type="radio" class="form__radio" id="single2" name="status2">
+													<label for="single2" class="form__label">
+														Single
+													</label>
+												</div>
+
+												<div class="form__item form__item--radio">
+													<input type="radio" class="form__radio" id="separated2" name="status2">
+													<label for="separated2" class="form__label">
+														Separated
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form__line">
+									<div class="form__item">
+										<label for="primary2" class="form__label">
+											Primary Residence Address:
+										</label>
+										<input type="text" class="form__input" id="primary2" name="primary2"
+											placeholder="City, State, Zip Code">
+									</div>
+								</div>
+
+
+								<div class="form__line">
+
+									<div class="row">
+										<div class="form__radio__wrapper col-12 col-md-6" style="justify-content: flex-start;">
+											<div class="form__radio__label">
+												Do you own or rent your primary residence:
+											</div>
+											<div class="form__radio__list">
+												<div class="form__item form__item--radio">
+													<input type="radio" class="form__radio" id="own2" name="residence2" checked>
+													<label for="own2" class="form__label">
+														Own
+													</label>
+												</div>
+
+												<div class="form__item form__item--radio">
+													<input type="radio" class="form__radio" id="rent2" name="residence2">
+													<label for="rent2" class="form__label">
+														Rent
+													</label>
+												</div>
+											</div>
+										</div>
+
+										<div class="form__item col-12 col-md-6">
+											<label for="numberofyears2" class="form__label">
+												Number of years at primary residence:
+											</label>
+											<input type="text" class="form__input" id="numberofyears2" name="numberofyears2"
+												placeholder="City, State, Zip Code">
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form__line" style="padding-left: 84px;">
+									<div class="form__item">
+										<label for="mailing2" class="form__label">
+											Mailing Address:
+										</label>
+										<input type="text" class="form__input" id="mailing2" name="mailing2">
+									</div>
+								</div>
+
+								<div class="form__line" style="padding-left: 72px;">
+									<div class="row">
+
+										<div class="form__item col-12 col-md-4">
+											<label for="email2" class="form__label">
+												Email:
+											</label>
+											<input type="email" class="form__input" id="email2" name="email2">
+										</div>
+
+										<div class="form__item col-12 col-md-4">
+											<label for="mobilephone2" class="form__label">
+												Mobile Phone:
+											</label>
+											<input type="tel" class="form__input" id="mobilephone2" name="mobilephone2">
+										</div>
+
+										<div class="form__item col-12 col-md-4">
+											<label for="homephone2" class="form__label">
+												Home Phone:
+											</label>
+											<input type="text" class="form__input" id="homephone2" name="homephone2">
+										</div>
+
+
+									</div>
+								</div>
+
+
+								<div class="form__line" style="padding-left: 18px;">
+									<div class="row">
+
+										<div class="form__item col-12 col-md-4">
+											<label for="dateofbirth2" class="form__label">
+												Date of Birth:
+											</label>
+											<input type="date" class="form__input" id="dateofbirth2" name="dateofbirth2">
+										</div>
+
+										<div class="form__item col-12 col-md-4">
+											<label for="password2" class="form__label">
+												Social Security #:
+											</label>
+											<input type="password" class="form__input" id="password2" name="password2">
+										</div>
+
+									</div>
+								</div>
+
+								<div class="form__line">
+									<div class="form__radio__wrapper" style="justify-content: flex-start;">
+										<div class="form__radio__label">
+											Self-Employed:
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="yes2" name="selfemployed2" checked>
+												<label for="yes2" class="form__label">
+													Yes
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="no2" name="selfemployed2">
+												<label for="no2" class="form__label">
+													No
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form__line">
+									<div class="row">
+
+										<div class="form__item col-12 col-md-4">
+											<label for="employername2" class="form__label">
+												Employer Name:
+											</label>
+											<input type="text" class="form__input" id="employername2" name="employername2">
+										</div>
+
+										<div class="form__item col-12 col-md-4">
+											<label for="positiontitle2" class="form__label">
+												Position & Title:
+											</label>
+											<input type="text" class="form__input" id="positiontitle2" name="positiontitle2">
+										</div>
+
+										<div class="form__item col-12 col-md-4">
+											<label for="employeraddress2" class="form__label">
+												Employer Address:
+											</label>
+											<input type="text" class="form__input" id="employeraddress2" name="employeraddress2">
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form__box__table__wrapper">
+							<div class="form__box form__box--table">
+								<div class="form__header form__header--table">
+									<div class="row">
+										<h2 class="form__header__title col-8">
+											BRROWER / AUTHORIZED SIGNER INFORMATION
+										</h2>
+
+										<span class="form__table__top col-2">
+											Borrower
+										</span>
+
+										<span class="form__table__top col-2">
+											Co-Borrower
+										</span>
+									</div>
+								</div>
+
+								<div class="form__table">
+
+									<div class="form__table__line form__table__line--special">
+										<div class="row">
+											<div class="form__table__left col-8">
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														Yes
+													</div>
+
+													<div class="form__table__item col-6">
+														No
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														Yes
+													</div>
+
+													<div class="form__table__item col-6">
+														No
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are there any outstanding judgements against you?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="BorrowerYes1" name="1" checked>
+															<label for="BorrowerYes1" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="BorrowerNo1" name="1">
+															<label for="BorrowerNo1" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="CoBorrowerYes1" name="2">
+															<label for="CoBorrowerYes1" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="CoBorrowerNos1" name="2" checked>
+															<label for="CoBorrowerNos1" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Have you been declared bankrupt within the last seven (7) years?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="5" name="3" checked>
+															<label for="5" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="6" name="3" checked>
+															<label for="6" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="7" name="4" checked>
+															<label for="7" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="8" name="4" checked>
+															<label for="8" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Have you or any other entity of which you were/are a principal been in foreclosure or had any
+												property that
+												was foreclosed upon?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="9" name="5" checked>
+															<label for="9" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="10" name="5" checked>
+															<label for="10" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="11" name="6" checked>
+															<label for="11" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="12" name="6" checked>
+															<label for="12" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are you party to lawsuit?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="13" name="7" checked>
+															<label for="13" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="14" name="7" checked>
+															<label for="14" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="15" name="8" checked>
+															<label for="15" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="16" name="8" checked>
+															<label for="16" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are you presently delinquent on any federal debt or any other loan, mortgage, financial
+												obligation, bond, or
+												loan guarantee?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="17" name="9" checked>
+															<label for="17" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="18" name="9" checked>
+															<label for="18" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="19" name="10" checked>
+															<label for="19" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="20" name="10" checked>
+															<label for="20" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Have you ever been convicted of a felony?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="21" name="11" checked>
+															<label for="21" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="22" name="11" checked>
+															<label for="22" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="23" name="12" checked>
+															<label for="23" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="24" name="12" checked>
+															<label for="24" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are you in a Civil Union or a Domestic Partnership, or do you have a non-borrowing spouse, or
+												are you a
+												party to a Designated Beneficiary Agreement?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="25" name="13" checked>
+															<label for="25" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="26" name="13" checked>
+															<label for="26" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="27" name="14" checked>
+															<label for="27" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="28" name="14" checked>
+															<label for="28" class=" form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are you a US citizen?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="29" name="15" checked>
+															<label for="29" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="30" name="15" checked>
+															<label for="30" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="31" name="16" checked>
+															<label for="31" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="32" name="16" checked>
+															<label for="32" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Are you a permanent resident alien?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="33" name="17" checked>
+															<label for="33" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="34" name="17" checked>
+															<label for="34" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="35" name="18" checked>
+															<label for="35" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="36" name="18" checked>
+															<label for="36" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="form__table__line">
+										<div class="row">
+											<div class="form__table__left col-8">
+												Do you intend to occupy the property as your primary residence?
+											</div>
+
+											<div class="form__table__right__left col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="37" name="19" checked>
+															<label for="37" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="38" name="19" checked>
+															<label for="38" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="form__table__right__right col-2">
+												<div class="row">
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="39" name="20" checked>
+															<label for="39" class="form__label">
+															</label>
+														</div>
+													</div>
+
+													<div class="form__table__item col-6">
+														<div class="form__item form__item--radio">
+															<input type="radio" class="form__radio" id="40" name="20" checked>
+															<label for="40" class="form__label">
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									FINANCIAL STATEMENT
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="estimatedTotal" class="form__label">
+											Estimated Total Annual Income
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="estimatedTotal" name="estimatedTotal"
+											placeholder="$">
+									</div>
+
+									<div class="form__item col-12 col-md-6">
+										<label for="estimatedCurrent" class="form__label">
+											Estimated Current Liquid Assets:
+											<span class="form__label__sub">(cash or can be converted to cash within 30 days)</span>
+										</label>
+										<input type="number" class="form__input col-12 col-md-5" id="estimatedCurrent"
+											name="estimatedCurrent" placeholder="$">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 153px;">
+										<label for="cashInBank" class="form__label">
+											Cash in Bank
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="cashInBank" name="cashInBank"
+											placeholder="$">
+									</div>
+
+									<div class="form__item col-12 col-md-6">
+										<label for="realEstate" class="form__label" style="padding-left: 24px;">
+											Real Estate Owned (Net of All Debt )
+
+										</label>
+										<input type="number" class="form__input col-12 col-md-5" id="realEstate" name="realEstate"
+											placeholder="$">
+									</div>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="form__header form__header--main">
+							<h2 class="form__header__title">
+								<b>LOAN APPLICATION</b> - Transaction Details
+							</h2>
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									SUBJECT PROPERTY INFORMATION
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item col-12">
+										<label for="subjectPropertyAddress" class="form__label">
+											Subject Property Address:
+										</label>
+										<input type="text" class="form__input" id="subjectPropertyAddress" name="subjectPropertyAddress"
+											placeholder="City, State, Zip Code">
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+
+								<div class="row">
+									<div class="form__item col-12 col-md-5">
+										<label for="propertyType" class="form__label">
+											Property Type:
+										</label>
+										<input type="text" class="form__input" id="propertyType" name="propertyType">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="numberOfUnits" class="form__label">
+											Number of Units:
+										</label>
+										<input type="text" class="form__input col-12 col-md-4" id="numberOfUnits" name="numberOfUnits">
+									</div>
+
+									<div class="form__radio__wrapper col-12 col-md-3">
+										<div class="form__radio__label">
+											Occupancy
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="leased" name="occupancy" checked>
+												<label for="leased" class="form__label">
+													Leased
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="vacant" name="occupancy">
+												<label for="vacant" class="form__label">
+													Vacant
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="form__line">
+
+								<div class="row">
+
+									<div class="form__radio__wrapper col-12 col-md-4" style="justify-content: flex-start;">
+										<div class="form__radio__label">
+											Cross-Collateralization:
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="cross1" name="crossCollateralization" checked>
+												<label for="cross1" class="form__label">
+													Yes
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="cross2" name="crossCollateralization">
+												<label for="cross2" class="form__label">
+													No
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form__item col-12 col-md-4" style="padding-left: 72px;">
+										<label for="numberOfProperties" class="form__label">
+											Number of properties:
+										</label>
+										<input type="text" class="form__input col-12 col-md-4" id="numberOfProperties"
+											name="numberOfProperties">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									LOAN REQUEST INFORMATION
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										Transaction Type:
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="purchase" name="transactionType" checked>
+											<label for="purchase" class="form__label">
+												Purchase
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="rateTermRefinance" name="transactionType">
+											<label for="rateTermRefinance" class="form__label">
+												Rate & Term Refinance
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="cashOutRefinance2" name="transactionType">
+											<label for="cashOutRefinance2" class="form__label">
+												Cash-Out Refinance
+											</label>
+										</div>
+
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="loanAmountRequested" class="form__label">
+											Loan Amount Requested:
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="loanAmountRequested"
+											name="loanAmountRequested" placeholder="$">
+									</div>
+
+									<div class="form__radio__wrapper col-12 col-md-6">
+										<div class="form__radio__label">
+											Loan Term Request:
+										</div>
+										<div class="form__radio__list">
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="1year" name="loanTermRequest" checked>
+												<label for="1year" class="form__label">
+													1 Year
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="2year" name="loanTermRequest">
+												<label for="2year" class="form__label">
+													2 Year
+												</label>
+											</div>
+
+											<div class="form__item form__item--radio">
+												<input type="radio" class="form__radio" id="4year" name="loanTermRequest">
+												<label for="4year" class="form__label">
+													4 Year
+												</label>
+											</div>
+
+
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 90px;">
+										<label for="purchasePrice" class="form__label">
+											Purchase Price:
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="purchasePrice" name="purchasePrice"
+											placeholder="$">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="justify-content: flex-end;">
+										<label for="estimatedPropertyValue" class="form__label">
+											Estimated Property Value:
+										</label>
+										<input type="number" class="form__input col-12 col-md-6" id="estimatedPropertyValue"
+											name="estimatedPropertyValue" placeholder="$">
+									</div>
+
+								</div>
+							</div>
+
+							<h3 class="form__text__title">
+								If refinance, complete the following:
+							</h3>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="currentDebtOnProperty" class="form__label">
+											Current debt on property:
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="currentDebtOnProperty"
+											name="currentDebtOnProperty" placeholder="$">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="justify-content: flex-end;">
+										<label for="originalCost" class="form__label">
+											Original Cost:
+										</label>
+										<input type="number" class="form__input col-12 col-md-3" id="originalCost" name="originalCost"
+											placeholder="$">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 100px;">
+										<label for="yearAcquired" class="form__label">
+											Year Acquired:
+										</label>
+										<input type="number" class="form__input col-md-4 col-12" id="yearAcquired" name="yearAcquired"
+											placeholder="$">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="justify-content: flex-end;">
+										<label for="amountOfRehabCompleted" class="form__label">
+											Amount of rehab completed (if any):
+										</label>
+										<input type="number" class="form__input col-12 col-md-3" id="amountOfRehabCompleted"
+											name="amountOfRehabCompleted" placeholder="$">
+									</div>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									BORROWER / ENTITY INFORMATION
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item col-12">
+										<label for="titleWillBeHeld" class="form__label">
+											Title will be held in what name(s):
+										</label>
+										<input type="text" class="form__input" id="titleWillBeHeld" name="titleWillBeHeld">
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										Type:
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="llc" name="type" checked>
+											<label for="llc" class="form__label">
+												LLC
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="corporation" name="type">
+											<label for="corporation" class="form__label">
+												Corporation
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="limitedPartnership" name="type">
+											<label for="limitedPartnership" class="form__label">
+												Limited <br class="no-xl md">Partnership
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									INTERIOR ACCESS CONTACT INFORMATION FOR SUBJECT PROPERTY
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="contactName" class="form__label">
+											Contact Name:
+											<span class="form__label__sub">
+												(or lock box number)
+											</span>
+										</label>
+										<input type="text" class="form__input" id="contactName" name="contactName" style="width: 331px;">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="justify-content: flex-end;">
+										<label for="phoneNumber" class="form__label">
+											Phone Number:
+										</label>
+										<input type="text" class="form__input" id="phoneNumber" name="phoneNumber" style="width: 331px;">
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 40px;">
+										<label for="relationship" class="form__label">
+											Relationship:
+										</label>
+										<input type="text" class="form__input" id="relationship" name="relationship" style="width: 331px;">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 87px; justify-content: flex-end;">
+										<label for="email3" class="form__label">
+											Email:
+										</label>
+										<input type="text" class="form__input" id="email3" name="email3" style="width: 331px;">
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header">
+								<h2 class="form__header__title">
+									ESCROW / CLOSING COMPANY INFORMATION
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="companytName2" class="form__label">
+											Company Name:
+										</label>
+										<input type="text" class="form__input" id="companytName2" name="companytName2"
+											style="width: 331px;">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="justify-content: flex-end;">
+										<label for="phoneNumber2" class="form__label">
+											Phone Number:
+										</label>
+										<input type="text" class="form__input" id="phoneNumber2" name="phoneNumber2" style="width: 331px;">
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 30px;">
+										<label for="closingAgent" class="form__label">
+											Closing Agent:
+										</label>
+										<input type="text" class="form__input" id="closingAgent" name="closingAgent" style="width: 331px;">
+									</div>
+
+									<div class="form__item col-12 col-md-6" style="padding-left: 87px; justify-content: flex-end;">
+										<label for="email4" class="form__label">
+											Email:
+										</label>
+										<input type="text" class="form__input" id="email4" name="email4" style="width: 331px;">
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="form__box form__box--text">
+							<div class="form__header form__header--main">
+								<h2 class="form__header__title">
+									DECLARATION OF NON-OWNER OCCUPANCY & BUSINESS USE OF PROCEEDS
+								</h2>
+							</div>
+
+							<div class="form__text__body">
+								I (“Borrower”) certify and represent to lender (“Originator”) as follows:<br>
+								I hereby declare that I have no intention of making the property (subject property listed in my loan
+								application) my principal residence.<br>
+								Additionally, I declare that I have no intention of utilizing the property as a second home and/or any
+								surviving spouse or family member shall live in the
+								property. I understand that this loan is a business purpose loan and not a household purpose loan. The
+								loan proceeds are intended to be used and
+								shall be used for business purpose only, not for personal use.<br>
+								I represent that I understand the difference between consumer loan for personal purposes and a
+								commercial loan for business purposes. I represent
+								that this loan is not a consumer loan and therefore is not subject to any laws relating to consumer
+								loans under any state or federal laws such as Truth
+								in Lending Act (15 U.S.C. § 1601 et seq.), Real Estate Settlement Procedures Act (12 U.S.C. § 2601 et
+								seq.), Gramm‐Leach Bliley Act (15
+								U.S.C. §§ 6802–6809), Secure and Fair Enforcement Mortgage Licensing Act (12 U.S.C. § 5101 et seq.), and
+								Homeowners Protection Act (12 U.S.C.
+								§ 4901 et seq.).<br>
+								I realize the lender, broker, assignees and successors rely upon this information. I confirm I have read
+								and understand this document. I declare under
+								penalty of perjury the foregoing is true and correct.
+							</div>
+
+
+						</div>
+
+						<div class="form__box form__box--text">
+							<div class="form__header form__header--main">
+								<h2 class="form__header__title">
+									AUTHORIZATION TO CONDUCT CREDIT & BACKGROUND CHECK
+								</h2>
+							</div>
+
+							<div class="form__text__body">
+								By signing this form, I/we hereby authorize lender to conduct a background and/or credit check.
+								Additionally, the undersigned and each party to this
+								loan, authorizes lender to disclose to any third party, employee, agent or assignee thereof information
+								regarding background and credit experience.
+								I understand that it is a federal crime punishable by fine or imprisonment, or both, to knowingly make
+								any false statements when applying for this
+								mortgage, as applicable under the provisions of title 18, United States code, 1014. I also understand
+								that the lender intends to use the data obtained
+								through the investigation for due diligence purposes only, and shall not disclose such information to
+								any other party except as otherwise authorized
+								above.
+
+							</div>
+
+
+						</div>
+
+						<div class="form__box">
+
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--special col-12 col-md-5">
+										<label for="entity" class="form__label">
+											Entity / Company Name (if applicable)
+										</label>
+										<input type="text" class="form__input" id="entity" name="entity">
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--special col-12 col-md-5">
+										<label for="authorizedSignerName" class="form__label">
+											Borrower / Authorized Signer Name (print)
+										</label>
+										<input type="text" class="form__input" id="authorizedSignerName" name="authorizedSignerName">
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-5" style="margin-left: 100px;">
+										<label for="coBorrower" class="form__label">
+											Co-Borrower / Authorized Signer Name (print)
+										</label>
+										<input type="text" class="form__input" id="coBorrower" name="coBorrower">
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="form__line">
+								<div class="row" style="align-items: flex-end;">
+
+									<div class="form__signuter__item col-md-4 col-12">
+										<img src="./images/dest/signuter.png" alt="signuter" class="form__signuter">
+										<div class="form__signuter__label">
+											Signature (Borrower / Authorized Signer)
+										</div>
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-2">
+										<label for="date3" class="form__label">
+											Date
+										</label>
+										<input type="date" class="form__input" id="date3" name="date3">
+									</div>
+
+									<div class="form__signuter__item col-md-4 col-12">
+										<img src="./images/dest/signuter.png" alt="signuter" class="form__signuter">
+										<div class="form__signuter__label">
+											Signature (Co-Borrower / Authorized Signer)
+										</div>
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-2">
+										<label for="date4" class="form__label">
+											Date
+										</label>
+										<input type="date" class="form__input" id="date4" name="date4">
+									</div>
+
+
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header form__header--main">
+								<h1 class="form__header__title">
+									STRATEGY LETTER
+								</h1>
+							</div>
+
+							<div class="form__line">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										1. I understand that I am applying for a non-owner occupied, business purpose investment loan.
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="yes3" name="iUnderstand" checked>
+											<label for="yes3" class="form__label">
+												Yes
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="no3" name="iUnderstand">
+											<label for="no3" class="form__label">
+												No
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										2. What is your plan for this property?
+									</div>
+									<div class="form__radio__list form__radio__list--special">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="fixflip" name="whatIsYourPlan" checked>
+											<label for="fixflip" class="form__label">
+												Fix & Flip
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="rental" name="whatIsYourPlan">
+											<label for="rental" class="form__label">
+												Rental
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="bridge" name="whatIsYourPlan">
+											<label for="bridge" class="form__label">
+												Bridge
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="other" name="whatIsYourPlan">
+											<label for="other" class="form__label">
+												Other
+											</label>
+										</div>
+
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--fix col-12">
+										<label for="fixflipmonths" class="form__label">
+											3. If Fix & Flip, what do you anticipate your hold time to be <span
+												class="no-xl md">months</span>?
+										</label>
+										<input type="text" class="form__input col-1" id="fixflipmonths" name="fixflipmonths">
+										<span class="form__textcontent no-md">
+											months
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--fix col-12">
+										<label for="fixflipmoney" class="form__label">
+											4. If Fix & Flip, what do you estimate the ARV (after repair value) to be: $
+										</label>
+										<input type="text" class="form__input col-1" id="fixflipmoney" name="fixflipmoney">
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--fix col-12">
+										<label for="ifRentalProperty" class="form__label">
+											5. If Rental Property, the monthly rental income is / will be: $
+										</label>
+										<input type="text" class="form__input col-2" id="ifRentalProperty" name="ifRentalProperty">
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--textarea col-12">
+										<label for="yourInvestmentStrategy" class="form__label form__label--space">
+											6. Explain your investment strategy for this property in detail:
+										</label>
+										<textarea class="form__input form__input--textarea" name="yourInvestmentStrategy"
+											id="yourInvestmentStrategy"></textarea>
+										<div class="form__sub__textarea">
+											- Please explain in detail
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line" style="margin-bottom: 15px;">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										7. What is your exit strategy and how do you intend to repay this loan?
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="sellProperty" name="exitStrategy" checked>
+											<label for="sellProperty" class="form__label">
+												Sell Property
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="refinance2" name="exitStrategy">
+											<label for="refinance2" class="form__label">
+												Refinance
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="other2" name="exitStrategy">
+											<label for="other2" class="form__label">
+												Other
+											</label>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--textarea col-12">
+										<textarea class="form__input form__input--textarea" name="intendToRepay"
+											id="intendToRepay"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--textarea col-12">
+										<label for="cashOutRefinance" class="form__label form__label--space">
+											8. If cash-out refinance, how do you intend to use the cash-out proceeds? Please explain in
+											detail.
+										</label>
+										<textarea class="form__input form__input--textarea" name="cashOutRefinance"
+											id="cashOutRefinance"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line" style="margin-bottom: 10px;">
+								<div class="form__radio__wrapper" style="justify-content: flex-start;">
+									<div class="form__radio__label">
+										9. Do you intend to rehab or upgrade the subject property?
+									</div>
+									<div class="form__radio__list">
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="yes4" name="doYouIntend" checked>
+											<label for="yes4" class="form__label">
+												Yes
+											</label>
+										</div>
+
+										<div class="form__item form__item--radio">
+											<input type="radio" class="form__radio" id="no4" name="doYouIntend">
+											<label for="no4" class="form__label">
+												No
+											</label>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--textarea col-12">
+										<label for="whatDoYouEstimate" class="form__label form__label--space">
+											If YES, what do you estimate your construction, rehab, and/or updating costs will be? Please
+											explain
+											in detail the scope of work.<br>
+											(If costs exceed $10,000, please provide an itemized rehab bid / outlined scope of work with your
+											submission)
+										</label>
+										<textarea class="form__input form__input--textarea" name="whatDoYouEstimate"
+											id="whatDoYouEstimate"></textarea>
+									</div>
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--special col-12 col-md-5">
+										<label for="entity4" class="form__label">
+											Entity / Company Name (if applicable)
+										</label>
+										<input type="text" class="form__input" id="entity4" name="entity4">
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="form__line">
+								<div class="row">
+									<div class="form__item form__item--special col-12 col-md-5">
+										<label for="authorizedSignerName2" class="form__label">
+											Borrower / Authorized Signer Name (print)
+										</label>
+										<input type="text" class="form__input" id="authorizedSignerName2" name="authorizedSignerName2">
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-5" style="margin-left: 100px;">
+										<label for="coBorrower2" class="form__label">
+											Co-Borrower / Authorized Signer Name (print)
+										</label>
+										<input type="text" class="form__input" id="coBorrower2" name="coBorrower2">
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="form__line">
+								<div class="row" style="align-items: flex-end;">
+
+									<div class="form__signuter__item col-md-4 col-12">
+										<img src="./images/dest/signuter.png" alt="signuter" class="form__signuter">
+										<div class="form__signuter__label">
+											Signature (Borrower / Authorized Signer)
+										</div>
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-2">
+										<label for="date5" class="form__label">
+											Date
+										</label>
+										<input type="date" class="form__input" id="date5" name="date5">
+									</div>
+
+									<div class="form__signuter__item col-md-4 col-12">
+										<img src="./images/dest/signuter.png" alt="signuter" class="form__signuter">
+										<div class="form__signuter__label">
+											Signature (Co-Borrower / Authorized Signer)
+										</div>
+									</div>
+
+									<div class="form__item form__item--special col-12 col-md-2">
+										<label for="date6" class="form__label">
+											Date
+										</label>
+										<input type="date" class="form__input" id="date6" name="date6">
+									</div>
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+
+						<div class="form__box">
+							<div class="form__header form__header--main">
+								<h2 class="form__header__title">
+									INVESTOR EXPERIENCE & PORTFOLIO
+								</h2>
+							</div>
+
+							<div class="form__line form__line--alone">
+								How many non-owner occupied, investment properties have you had a controlling interest in<br
+									class="no-md">
+								(including those you have sold) within the last:
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="12months" class="form__label">
+											12 months:
+										</label>
+										<input type="text" class="form__input" id="12months" name="12months">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="36months" class="form__label">
+											36 months:
+										</label>
+										<input type="text" class="form__input" id="36months" name="36months">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="ever" class="form__label">
+											Ever
+										</label>
+										<input type="text" class="form__input" id="ever" name="ever">
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="form__box">
+							<div class="form__header form__header--main">
+								<h2 class="form__header__title">
+									CURRENT SCHEDULE OF REAL ESTATE OWNED
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="address2" class="form__label">
+											Address:
+										</label>
+										<input type="text" class="form__input" id="address2" name="address2"
+											placeholder="Street address, City, ST ZIP">
+									</div>
+
+									<div class="form__item col-12 col-md-6">
+										<label for="name2" class="form__label">
+											Name:
+										</label>
+										<input type="text" class="form__input" id="name2" name="name2" placeholder="Name on Title">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4" style="padding-left: 35px;">
+										<label for="ownership" class="form__label">
+											% of Ownership:
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="ownership" name="ownership">
+									</div>
+
+									<div class="form__item col-12 col-md-4" style="padding-left: 32px;">
+										<label for="acquisitionDate" class="form__label">
+											Acquisition Date
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="acquisitionDate" name="acquisitionDate">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="presentMarketValue" class="form__label">
+											Present Market Value
+										</label>
+										<input type="text" class="form__input col-12 col-md-6" id="presentMarketValue"
+											name="presentMarketValue">
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="mortgagesLiens" class="form__label">
+											Mortgages & Liens:
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="mortgagesLiens" name="mortgagesLiens">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="netRentalIncome" class="form__label">
+											Net Rental Income
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="netRentalIncome" name="netRentalIncome">
+									</div>
+
+								</div>
+							</div>
+
+							<button class="form__add" type="button">
+								<img src="./images/dest/add.svg" alt="add">
+								Add one more
+							</button>
+
+						</div>
+
+						<div class="form__box">
+							<div class="form__header form__header--main">
+								<h2 class="form__header__title">
+									RECENTLY SOLD PROPERTIES
+								</h2>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-6">
+										<label for="address3" class="form__label">
+											Address:
+										</label>
+										<input type="text" class="form__input" id="address3" name="address3"
+											placeholder="Street address, City, ST ZIP">
+									</div>
+
+									<div class="form__item col-12 col-md-6">
+										<label for="name3" class="form__label">
+											Name:
+										</label>
+										<input type="text" class="form__input" id="name3" name="name3" placeholder="Name on Title">
+									</div>
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4" style="padding-left: 35px;">
+										<label for="ownership2" class="form__label">
+											% of Ownership:
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="ownership2" name="ownership2">
+									</div>
+
+									<div class="form__item col-12 col-md-4" style="padding-left: 32px;">
+										<label for="acquisitionDate2" class="form__label">
+											Acquisition Date
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="acquisitionDate2"
+											name="acquisitionDate2">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="presentMarketValue2" class="form__label">
+											Present Market Value
+										</label>
+										<input type="text" class="form__input col-12 col-md-6" id="presentMarketValue2"
+											name="presentMarketValue2">
+									</div>
+
+
+								</div>
+							</div>
+
+							<div class="form__line">
+								<div class="row">
+
+									<div class="form__item col-12 col-md-4">
+										<label for="mortgagesLiens2" class="form__label">
+											Mortgages & Liens:
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="mortgagesLiens2" name="mortgagesLiens2">
+									</div>
+
+									<div class="form__item col-12 col-md-4">
+										<label for="netRentalIncome2" class="form__label">
+											Net Rental Income
+										</label>
+										<input type="text" class="form__input col-12 col-md-5" id="netRentalIncome2"
+											name="netRentalIncome2">
+									</div>
+
+								</div>
+							</div>
+
+							<button class="form__add" type="button">
+								<img src="./images/dest/add.svg" alt="add">
+								Add one more
+							</button>
+
+						</div>
+
+
+
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!-- jQuery -->
+	<script src="./js/include/jquery.min.js"></script>
+
+	<!-- jQuery maskedinput -->
+	<!-- <script src="./js/include/jquery.maskedinput.min.js"></script> -->
+
+	<!-- Slick -->
+	<!-- <script src="./js/include/slick.min.js"></script> -->
+
+	<!-- Custom JS -->
+	<script src="./js/app.min.js"></script>
+</body>
+
+</html>
