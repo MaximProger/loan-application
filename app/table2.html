@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap Grid -->
+  <link rel="stylesheet" href="./css/include/bootstrap-grid.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/app.min.css">
+  <title>Title</title>
+</head>
+
+<body>
+
+  <main class="main">
+    <section class="form__section">
+      <div class="container container--table">
+
+
+        <div class="table__wrapper">
+          <div class="form__header form__header--main">
+            <h1 class="form__header__title">
+              <b>LOAN APPLICATION</b> - Transaction Details
+            </h1>
+          </div>
+
+          <div class="table__box">
+            <div class="form__header">
+              <h2 class="form__header__title">
+                SUBJECT PROPERTY INFORMATION
+              </h2>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+                <div class="table__item col-12">
+                  <div class="table__label">
+                    Subject Property Address:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+                <div class="table__item col-6">
+                  <div class="table__label">
+                    City:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="table__item col-3">
+                  <div class="table__label">
+                    State:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="table__item col-3">
+                  <div class="table__label">
+                    Zip Code:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+                <div class="table__item col-4">
+                  <div class="table__label">
+                    Property Type:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="table__item col-4">
+                  <div class="table__label">
+                    Number of Units:
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="form__radio__wrapper table__radio__wrapper col-4">
+                  <div class="form__radio__label">
+                    Occupancy:
+                  </div>
+                  <div class="form__radio__list">
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="leased" name="occupancy" checked>
+                      <label for="leased" class="form__label">
+                        Leased
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="vacant" name="occupancy">
+                      <label for="vacant" class="form__label">
+                        Vacant
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div style="display: flex; justify-content: flex-end;
+              align-items: center;">
+
+                <div class="form__radio__wrapper table__radio__wrapper"
+                  style="justify-content: flex-start; width: 50%;">
+                  <div class="form__radio__label">
+                    Cross-Collateralization:
+                  </div>
+                  <div class="form__radio__list">
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="yes2" name="crossCollateralization" checked>
+                      <label for="yes2" class="form__label">
+                        Yes
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="no2" name="crossCollateralization">
+                      <label for="no2" class="form__label">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="table__item">
+                  <div class="table__label">
+                    If YES, # of properties:
+                  </div>
+                  <div class="table__content" style="width: 103px;">
+
+                  </div>
+
+                  <span class="table__sub__text">
+                    (Provide all addresses on a separate spreadsheet)
+                  </span>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="table__box">
+            <div class="form__header">
+              <h2 class="form__header__title">
+                LOAN REQUEST INFORMATION
+              </h2>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+                <div class="form__radio__wrapper table__radio__wrapper col-12" style="justify-content: flex-start;">
+                  <div class="form__radio__label">
+                    Transaction Type:
+                  </div>
+                  <div class="form__radio__list">
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="purchase" name="transactionType" checked>
+                      <label for="purchase" class="form__label">
+                        Purchase
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="rateterm" name="transactionType">
+                      <label for="rateterm" class="form__label">
+                        Rate & Term Refinance
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="cashOutRefinance" name="transactionType">
+                      <label for="cashOutRefinance" class="form__label">
+                        Cash-Out Refinance
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+
+                <div class="table__item col-6" style="padding-right: 5px;">
+                  <div class="table__label">
+                    Loan Amount Requested: $
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="form__radio__wrapper table__radio__wrapper col-6" style="padding-left: 5px;">
+                  <div class="form__radio__label">
+                    Loan Term Request:
+                  </div>
+                  <div class="form__radio__list">
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="1year" name="loanTermRequest" checked>
+                      <label for="1year" class="form__label">
+                        1 Year
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="2year" name="loanTermRequest">
+                      <label for="2year" class="form__label">
+                        2 Year
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="4year" name="loanTermRequest">
+                      <label for="4year" class="form__label">
+                        4 Year
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+
+                <div class="table__item col-6" style="padding-right: 5px;">
+                  <div class="table__label">
+                    Purchase Price: $
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="table__item col-6" style="padding-left: 5px;">
+                  <div class="table__label">
+                    Estimated Property Value: $
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+
+
+
+              </div>
+            </div>
+
+            <div class="table__border">
+              <div class="table__line">
+                <div class="row">
+
+                  <div class="table__item col-4" style="padding-right: 0px;">
+                    <div class="table__text__title" style="margin-bottom: 0;">
+                      If refinance, complete the following:
+                    </div>
+                  </div>
+
+                  <div class="table__item col-5" style="padding-left: 0; padding-right: 5px;">
+                    <div class="table__label">
+                      Current debt on property: $
+                    </div>
+                    <div class="table__content">
+
+                    </div>
+                  </div>
+
+                  <div class="table__item col-3" style="padding-left: 5px;">
+                    <div class="table__label">
+                      Original Cost: $
+                    </div>
+                    <div class="table__content">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="table__line">
+                <div style="display: flex; align-items: flex-end; justify-content: flex-end;">
+
+                  <div class="table__item" style="width: fit-content; margin-right: 7px;">
+                    <div class="table__label">
+                      Year Acquired:
+                    </div>
+                    <div class="table__content" style="width: 111px">
+
+                    </div>
+                  </div>
+
+                  <div class="table__item" style="width: fit-content;">
+                    <div class="table__label">
+                      Amount of rehab completed (if any): $
+                    </div>
+                    <div class="table__content" style="width: 138px">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="table__box">
+            <div class="form__header">
+              <h2 class="form__header__title">
+                BORROWER / ENTITY INFORMATION
+              </h2>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+                <div class="table__item col-12">
+                  <div class="table__label">
+                    Title will be held in what name(s):
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row">
+
+                <div class="form__radio__wrapper table__radio__wrapper col-12" style="justify-content: flex-start;">
+                  <div class="form__radio__label" style="margin-right: 60px;">
+                    Type:
+                  </div>
+                  <div class="form__radio__list">
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="llc" name="type" checked>
+                      <label for="llc" class="form__label">
+                        LLC
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="corporation" name="type">
+                      <label for="corporation" class="form__label">
+                        Corporation
+                      </label>
+                    </div>
+
+                    <div class="form__item form__item--radio">
+                      <input type="radio" class="form__radio" id="limitedPartnership" name="type">
+                      <label for="limitedPartnership" class="form__label">
+                        Limited Partnership
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="table__box table__box--table">
+            <div class="form__header">
+              <h2 class="form__header__title">
+                INTERIOR ACCESS CONTACT INFORMATION FOR SUBJECT PROPERTY
+              </h2>
+            </div>
+
+            <div class="table__table__body">
+
+              <div class="table__table__line table__table__line--four" style="height: 33px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="table__table__section" style="padding-left: 5px; width: 20%;">
+                    Contact Name:
+                    <span class="table__sub__text">
+                      (or lock box number)
+                    </span>
+                  </div>
+
+                  <div class="table__table__cell" style="border-right: 1px solid #000; width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                  <div class="table__table__section" style="width: 20%; padding-left: 5px;">
+                    Phone Number:
+                  </div>
+
+                  <div class="table__table__cell" style="width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="table__table__line table__table__line--four" style="height: 33px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="table__table__section" style="padding-left: 5px; width: 20%;">
+                    Relationship:
+                  </div>
+
+                  <div class="table__table__cell" style="border-right: 1px solid #000; width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                  <div class="table__table__section" style="width: 20%; padding-left: 5px;">
+                    Email:
+                  </div>
+
+                  <div class="table__table__cell" style="width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <div class="table__box table__box--table">
+            <div class="form__header">
+              <h2 class="form__header__title">
+                ESCROW / CLOSING COMPANY INFORMATION
+              </h2>
+            </div>
+
+            <div class="table__table__body">
+
+              <div class="table__table__line table__table__line--four" style="height: 33px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="table__table__section" style="padding-left: 5px; width: 20%;">
+                    Company Name:
+                  </div>
+
+                  <div class="table__table__cell" style="border-right: 1px solid #000; width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                  <div class="table__table__section" style="width: 20%; padding-left: 5px;">
+                    Phone Number:
+                  </div>
+
+                  <div class="table__table__cell" style="width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="table__table__line table__table__line--four" style="height: 33px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <div class="table__table__section" style="padding-left: 5px; width: 20%;">
+                    Closing Agent: Email:
+                  </div>
+
+                  <div class="table__table__cell" style="border-right: 1px solid #000; width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                  <div class="table__table__section" style="width: 20%; padding-left: 5px;">
+                    Email:
+                  </div>
+
+                  <div class="table__table__cell" style="width: 30%; padding-left: 5px;">
+
+                  </div>
+
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <div class="form__box form__box--text table__box__text">
+            <div class="form__header form__header--main">
+              <h2 class="form__header__title">
+                DECLARATION OF NON-OWNER OCCUPANCY & BUSINESS USE OF PROCEEDS
+              </h2>
+            </div>
+
+            <div class="form__text__body">
+              I (“Borrower”) certify and represent to lender (“Originator”) as follows:<br>
+              I hereby declare that I have no intention of making the property (subject property listed in my loan
+              application) my principal residence.<br>
+              Additionally, I declare that I have no intention of utilizing the property as a second home and/or any
+              surviving spouse or family member shall live in the
+              property. I understand that this loan is a business purpose loan and not a household purpose loan. The
+              loan proceeds are intended to be used and
+              shall be used for business purpose only, not for personal use.<br>
+              I represent that I understand the difference between consumer loan for personal purposes and a
+              commercial loan for business purposes. I represent
+              that this loan is not a consumer loan and therefore is not subject to any laws relating to consumer
+              loans under any state or federal laws such as Truth
+              in Lending Act (15 U.S.C. § 1601 et seq.), Real Estate Settlement Procedures Act (12 U.S.C. § 2601 et
+              seq.), Gramm‐Leach Bliley Act (15
+              U.S.C. §§ 6802–6809), Secure and Fair Enforcement Mortgage Licensing Act (12 U.S.C. § 5101 et seq.), and
+              Homeowners Protection Act (12 U.S.C.
+              § 4901 et seq.).<br>
+              I realize the lender, broker, assignees and successors rely upon this information. I confirm I have read
+              and understand this document. I declare under
+              penalty of perjury the foregoing is true and correct.
+            </div>
+
+
+          </div>
+
+          <div class="form__box form__box--text table__box__text" style="margin-bottom: 25px;">
+            <div class="form__header form__header--main">
+              <h2 class="form__header__title">
+                AUTHORIZATION TO CONDUCT CREDIT & BACKGROUND CHECK
+              </h2>
+            </div>
+
+            <div class="form__text__body">
+              By signing this form, I/we hereby authorize lender to conduct a background and/or credit check.
+              Additionally, the undersigned and each party to this
+              loan, authorizes lender to disclose to any third party, employee, agent or assignee thereof information
+              regarding background and credit experience.
+              I understand that it is a federal crime punishable by fine or imprisonment, or both, to knowingly make
+              any false statements when applying for this
+              mortgage, as applicable under the provisions of title 18, United States code, 1014. I also understand
+              that the lender intends to use the data obtained
+              through the investigation for due diligence purposes only, and shall not disclose such information to
+              any other party except as otherwise authorized
+              above.
+
+            </div>
+
+
+          </div>
+
+          <div class="table__box">
+
+            <div class="table__line" style="margin-bottom: 18px;">
+              <div class="row">
+                <div class="table__item table__item--special col-4">
+                  <div class="table__label">
+                    Entity / Company Name (if applicable)
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line" style="margin-bottom: 15px;">
+              <div class="row">
+                <div class="table__item table__item--special col-4">
+                  <div class="table__label">
+                    Borrower / Authorized Signer Name (print)
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+                <div class="table__item table__item--special col-2">
+                </div>
+                <div class="table__item table__item--special col-4">
+                  <div class="table__label">
+                    Co-Borrower / Authorized Signer Name (print)
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+
+                <div class="table__item table__item--special col-2">
+                </div>
+              </div>
+            </div>
+
+            <div class="table__line">
+              <div class="row" style="align-items: flex-end;">
+                <div class="table__item table__item--special col-4">
+                  <div class="table__label">
+                    Signature (Borrower / Authorized Signer)
+                  </div>
+                  <div class="table__content" style="text-align: left;">
+                    X
+                  </div>
+                </div>
+                <div class="table__item table__item--special col-2">
+                  <div class="table__label">
+                    Date
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+                <div class="table__item table__item--special col-4">
+                  <div class="table__label">
+                    Signature
+                  </div>
+                  <div class="table__content" style="text-align: left;">
+                    X
+                  </div>
+                </div>
+
+                <div class="table__item table__item--special col-2">
+                  <div class="table__label">
+                    Date
+                  </div>
+                  <div class="table__content">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- jQuery -->
+  <script src="./js/include/jquery.min.js"></script>
+
+  <!-- jQuery maskedinput -->
+  <!-- <script src="./js/include/jquery.maskedinput.min.js"></script> -->
+
+  <!-- Slick -->
+  <!-- <script src="./js/include/slick.min.js"></script> -->
+
+  <!-- Custom JS -->
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>
